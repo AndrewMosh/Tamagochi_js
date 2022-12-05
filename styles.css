@@ -214,8 +214,8 @@ input#toggle:checked ~ #show-menu .btn .closeBtn {
 
 .bio {
   background-color: bisque;
-  width: 270px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   position: absolute;
   top: -100px;
