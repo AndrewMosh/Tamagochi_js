@@ -272,7 +272,7 @@ input#toggle:checked ~ #show-menu .btn .closeBtn {
 
 .beach {
   overflow: hidden;
-  background-image: url(./assets/beach.jpeg);
+  background-image: url(./assets/forest.jpg);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
 }
