@@ -4,4 +4,4 @@
 
 <br/>
 
-[Тамагочи Микки](https://github.com/AndrewMosh/Tamagochi-js-)
+[Тамагочи Микки](https://andrewmosh.github.io/Tamagochi-js-/)
