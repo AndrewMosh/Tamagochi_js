@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  height: 120%;
   width: 100%;
 }
 body {
@@ -218,8 +218,8 @@ input#toggle:checked ~ #show-menu .btn .closeBtn {
 
 .bio {
   background-color: bisque;
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   position: absolute;
   top: -100px;
@@ -279,4 +279,24 @@ input#toggle:checked ~ #show-menu .btn .closeBtn {
   background-image: url(./assets/forest.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.myName {
+  color: white;
+}
+#myProgress {
+  width: 20%;
+  background-color: grey;
+  display: none;
+}
+
+#myBar {
+  width: 100%;
+  height: 20px;
+  background-color: green;
 }

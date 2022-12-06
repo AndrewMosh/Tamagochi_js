@@ -12,6 +12,14 @@
     <title>Тамагочи</title>
   </head>
   <body>
+    <div class="myName">
+      <p>Меня зовут Микки!</p>
+      <p class="age"></p>
+      <p class="time"></p>
+    </div>
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
     <div class="menu">
       <input type="checkbox" id="toggle" />
       <label id="show-menu" for="toggle">
@@ -49,10 +57,16 @@
         </div>
         <div class="eyes"></div>
       </label>
+
       <div class="bio">
+        <div class="progress">
+          <label>Энергия</label
+          ><progress id="energy" value="100" max="100"></progress>
+          <label>Счастье</label><progress value="60" max="100"></progress>
+          <label>Сытость</label><progress value="40" max="100"></progress>
+          <label>Туалет</label><progress value="10" max="100"></progress>
+        </div>
         <span class="close">&#10008;</span>
-        <p>Привет! Меня зовут Микки</p>
-        <p class="age"></p>
       </div>
     </div>
     <script src="index.js"></script>
