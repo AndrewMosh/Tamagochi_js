@@ -211,7 +211,7 @@ input {
   flex-direction: column;
 }
 #myProgress {
-  width: 35%;
+  width: 25%;
   background-color: rgb(234, 190, 60);
   display: none;
   border-radius: 5px;

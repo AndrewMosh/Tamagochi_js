@@ -50,28 +50,28 @@ function showBio() {
 petMe.addEventListener("click", petTheDog);
 function petTheDog() {
   elem.textContent = "Счастье";
-  move(40, "green");
+  move(10, "green");
   pic.setAttribute("src", "./assets/cuddle.gif");
   happy.value += 20;
 }
 play.addEventListener("click", playWithMe);
 function playWithMe() {
   elem.textContent = "Счастье";
-  move(40, "green");
+  move(10, "green");
   pic.setAttribute("src", "./assets/play.gif");
   happy.value += 20;
 }
 sleep.addEventListener("click", goToBed);
 function goToBed() {
   elem.textContent = "Энергия";
-  move(100, "green");
+  move(10, "green");
   pic.setAttribute("src", "./assets/gotobed.gif");
   energy.value = 100;
 }
 scold.addEventListener("click", scareMe);
 function scareMe() {
   elem.textContent = "Счастье";
-  move(20, "red");
+  move(10, "red");
   pic.setAttribute("src", "./assets/scared.gif");
   happy.value -= 20;
 }
@@ -82,7 +82,7 @@ function food() {
 }
 function feedMe() {
   elem.textContent = "Сытость";
-  move(30, "green");
+  move(10, "green");
   burger.classList.add("burgerTrue");
   pic.setAttribute("src", "./assets/happy to see.gif");
   setTimeout(food, 5000);
@@ -93,7 +93,7 @@ function feedMe() {
 walk.addEventListener("click", goForWalk);
 function goForWalk() {
   elem.textContent = "Туалет";
-  move(30, "green");
+  move(10, "green");
   pic.setAttribute("src", "./assets/shocked.gif");
   document.body.classList.toggle("beach");
   toilet.value = 100;
