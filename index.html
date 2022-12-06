@@ -40,7 +40,7 @@
         <div id="play" class="btn">
           <i title="поиграй со мной" class="fa-solid fa-football fasize"></i>
         </div>
-        <div class="btn">
+        <div id="clean" class="btn">
           <i title="убери мои какахи" class="fa-solid fa-broom fasize"></i>
         </div>
         <div id="walk" class="btn">
@@ -62,13 +62,17 @@
         <div class="progress">
           <label>Энергия</label
           ><progress id="energy" value="100" max="100"></progress>
-          <label>Счастье</label><progress value="60" max="100"></progress>
-          <label>Сытость</label><progress value="40" max="100"></progress>
-          <label>Туалет</label><progress value="10" max="100"></progress>
+          <label>Счастье</label
+          ><progress id="happy" value="100" max="100"></progress>
+          <label>Сытость</label
+          ><progress id="hunger" value="100" max="100"></progress>
+          <label>Туалет</label
+          ><progress id="toilet" value="100" max="100"></progress>
         </div>
         <span class="close">&#10008;</span>
       </div>
     </div>
+    <div class="poop"><img src="./assets/shit.gif" alt="" /></div>
     <script src="index.js"></script>
   </body>
 </html>

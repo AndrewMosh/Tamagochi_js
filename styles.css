@@ -298,5 +298,17 @@ input#toggle:checked ~ #show-menu .btn .closeBtn {
 #myBar {
   width: 100%;
   height: 20px;
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.826);
+  color: white;
+  padding: 5px;
+}
+.poop {
+  text-align: center;
+  display: none;
+}
+.poop img {
+  width: 100px;
+  max-width: 50%;
+  position: absolute;
+  bottom: 0;
 }
