@@ -29,6 +29,7 @@ input {
   left: 50%;
   margin-left: -25px;
   margin-top: -40px;
+  transform: scale(1.2);
 }
 
 .btn {
@@ -38,11 +39,6 @@ input {
   position: absolute;
   overflow: hidden;
   cursor: pointer;
-}
-
-.material-icons.md-36 {
-  font-size: 36px;
-  color: #03a9f4;
 }
 
 .btn {
@@ -57,113 +53,54 @@ input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.btn:not(:first-child) {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  z-index: -2;
-
-  -webkit-transition: all 0.6s cubic-bezier(0.87, -0.41, 0.19, 1.44);
-  transition: all 0.6s cubic-bezier(0.87, -0.41, 0.19, 1.44);
 }
 
 .btn:nth-child(2) {
-  top: 0px;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-.btn:nth-child(3) {
-  top: 0px;
-  left: 0px;
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-.btn:nth-child(4) {
-  left: 0px;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-.btn:nth-child(5) {
-  top: 0px;
-  left: 0px;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-.btn:nth-child(6) {
-  top: 0px;
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
-}
-.btn:nth-child(7) {
-  top: 0px;
-  left: 0px;
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
-}
-.btn:nth-child(8) {
-  left: 0px;
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
-}
-.btn:nth-child(9) {
-  top: 0px;
-  left: 0px;
-  -webkit-transition-delay: 0.7s;
-  transition-delay: 0.7s;
-}
-
-input#toggle:checked ~ #show-menu .btn:nth-child(2) {
   top: -180px;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-input#toggle:checked ~ #show-menu .btn:nth-child(3) {
+.btn:nth-child(3) {
   top: -120px;
   left: 120px;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-input#toggle:checked ~ #show-menu .btn:nth-child(4) {
+.btn:nth-child(4) {
   left: 180px;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-input#toggle:checked ~ #show-menu .btn:nth-child(5) {
+.btn:nth-child(5) {
   top: 120px;
   left: 120px;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-input#toggle:checked ~ #show-menu .btn:nth-child(6) {
+.btn:nth-child(6) {
   top: 180px;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-input#toggle:checked ~ #show-menu .btn:nth-child(7) {
+.btn:nth-child(7) {
   top: 120px;
   left: -120px;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-input#toggle:checked ~ #show-menu .btn:nth-child(8) {
+.btn:nth-child(8) {
   left: -180px;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
-
-input#toggle:checked ~ #show-menu .btn:nth-child(9) {
+.btn:nth-child(9) {
   top: -120px;
   left: -120px;
   opacity: 1;
@@ -172,18 +109,8 @@ input#toggle:checked ~ #show-menu .btn:nth-child(9) {
 
 .menuBtn {
   position: absolute;
-  transition: all 0.3s ease;
 }
 
-input#toggle:checked ~ #show-menu .btn .menuBtn {
-  transform: translateY(-50px);
-  opacity: 0;
-}
-
-input#toggle:checked ~ #show-menu .btn .closeBtn {
-  transform: translateY(0px);
-  opacity: 1;
-}
 .shiba {
   transform: scale(0.4);
   position: absolute;
@@ -218,12 +145,12 @@ input#toggle:checked ~ #show-menu .btn .closeBtn {
 
 .bio {
   background-color: bisque;
-  width: 260px;
-  height: 260px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   position: absolute;
-  top: -100px;
-  right: -170px;
+  top: -90px;
+  right: -160px;
   display: none;
 }
 .bioOn {
@@ -233,15 +160,7 @@ input#toggle:checked ~ #show-menu .btn .closeBtn {
   color: rgb(108, 103, 103);
   flex-direction: column;
 }
-.close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-  color: red;
-}
+
 .burger {
   position: absolute;
   width: 200px;
@@ -288,11 +207,15 @@ input#toggle:checked ~ #show-menu .btn .closeBtn {
 }
 .myName {
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 #myProgress {
-  width: 20%;
-  background-color: grey;
+  width: 35%;
+  background-color: rgb(234, 190, 60);
   display: none;
+  border-radius: 5px;
+  margin: 0 auto;
 }
 
 #myBar {
@@ -301,6 +224,7 @@ input#toggle:checked ~ #show-menu .btn .closeBtn {
   background-color: rgba(0, 128, 0, 0.826);
   color: white;
   padding: 5px;
+  border-radius: 5px;
 }
 .poop {
   text-align: center;
@@ -311,4 +235,14 @@ input#toggle:checked ~ #show-menu .btn .closeBtn {
   max-width: 50%;
   position: absolute;
   bottom: 0;
+  left: 20%;
+}
+
+@media (max-width: 644px) {
+  .menu {
+    transform: scale(0.75);
+  }
+  .poop img {
+    transform: scale(0.7);
+  }
 }

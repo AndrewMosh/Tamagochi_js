@@ -1,9 +1,7 @@
 const about = document.getElementById("about");
 const clean = document.getElementById("clean");
 const bio = document.querySelector(".bio");
-const close = document.querySelector(".close");
-const age = document.querySelector(".age");
-const time = document.querySelector(".time");
+
 const poop = document.querySelector(".poop");
 const petMe = document.querySelector("#petMe");
 const play = document.querySelector("#play");
@@ -23,10 +21,7 @@ const hunger = document.getElementById("hunger");
 about.addEventListener("click", showBio);
 let birthday = new Date("November 3, 2021 03:24:00");
 let now = new Date();
-age.textContent = `Мне ${now.getFullYear() - birthday.getFullYear()} год`;
-var myVar = setInterval(function () {
-  clock();
-}, 1000);
+
 var myCount = setInterval(function () {
   count();
 }, 5000);
@@ -48,14 +43,10 @@ function count() {
   }
   countProgress++;
 }
-function clock() {
-  let bitch = new Date();
-  time.textContent = bitch.getHours() + ":" + bitch.getMinutes();
-}
+
 function showBio() {
   bio.classList.toggle("bioOn");
 }
-close.addEventListener("click", () => bio.classList.toggle("bioOn"));
 petMe.addEventListener("click", petTheDog);
 function petTheDog() {
   elem.textContent = "Счастье";
