@@ -248,7 +248,9 @@ input {
 
 @media (max-height: 500px) {
   .menu {
-    transform: scale(0.6);
+    transform: scale(0.65);
+    margin-top: 0;
+    margin-left: 0;
   }
   .poop img {
     transform: scale(0.5);
