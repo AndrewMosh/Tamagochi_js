@@ -29,7 +29,6 @@ input {
   left: 50%;
   margin-left: -25px;
   margin-top: -40px;
-  transform: scale(1.2);
 }
 
 .btn {
@@ -244,5 +243,14 @@ input {
   }
   .poop img {
     transform: scale(0.7);
+  }
+}
+
+@media (max-height: 500px) {
+  .menu {
+    transform: scale(0.6);
+  }
+  .poop img {
+    transform: scale(0.5);
   }
 }
