@@ -14,4 +14,5 @@
 <img align="center"  src="https://github.com/AndrewMosh/Tamagochi-js-/blob/master/assets/4.png">
 
 <br/>
+
 [Демо](https://andrewmosh.github.io/Tamagochi-js-/)
