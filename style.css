@@ -4,7 +4,7 @@ html {
 }
 body {
   overflow: hidden;
-  background-image: url(./assets/livin\ room.jpg);
+  background-image: url("./assets/livinroom.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
