@@ -1,7 +1,6 @@
 const about = document.getElementById("about");
 const clean = document.getElementById("clean");
 const bio = document.querySelector(".bio");
-
 const poop = document.querySelector(".poop");
 const petMe = document.querySelector("#petMe");
 const play = document.querySelector("#play");
@@ -17,7 +16,28 @@ const energy = document.getElementById("energy");
 const happy = document.getElementById("happy");
 const toilet = document.getElementById("toilet");
 const hunger = document.getElementById("hunger");
-
+function move(interval, color) {
+  cont.style.display = "block";
+  var i = 0;
+  if (i == 0) {
+    i = 1;
+    var width = 1;
+    var id = setInterval(frame, interval);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.style.backgroundColor = color;
+        if (width === 98) {
+          cont.style.display = "none";
+        }
+      }
+    }
+  }
+}
 about.addEventListener("click", showBio);
 let birthday = new Date("November 3, 2021 03:24:00");
 let now = new Date();
@@ -107,27 +127,4 @@ clean.addEventListener("click", cleanPoops);
 function cleanPoops() {
   poop.style.display = "none";
   pic.setAttribute("src", "./assets/laugh with tears.gif");
-}
-
-function move(interval, color) {
-  cont.style.display = "block";
-  var i = 0;
-  if (i == 0) {
-    i = 1;
-    var width = 1;
-    var id = setInterval(frame, interval);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.style.backgroundColor = color;
-        if (width === 98) {
-          cont.style.display = "none";
-        }
-      }
-    }
-  }
 }

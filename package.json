@@ -1,0 +1,19 @@
+{
+  "name": "tamagochi",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "gh-pages": "^6.0.0",
+    "terser": "^5.24.0"
+  }
+}
