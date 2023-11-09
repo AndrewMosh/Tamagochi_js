@@ -54,12 +54,12 @@ function count() {
     hunger.value -= 2;
   }
   if (toilet.value == 0) {
-    pic.setAttribute("src", "./images/pooped.gif");
+    pic.setAttribute("src", "./assets/pooped.gif");
     poop.style.display = "block";
     toilet.value = 100;
   }
   if (energy.value === 0 && happy.value === 0 && hunger.value === 0) {
-    pic.setAttribute("src", "./images/cry.gif");
+    pic.setAttribute("src", "./assets/cry.gif");
   }
   countProgress++;
 }
@@ -69,7 +69,7 @@ function showBio() {
 }
 petMe.addEventListener("click", petTheDog);
 function petTheDog() {
-  pic.setAttribute("src", "./images/cuddle.gif");
+  pic.setAttribute("src", "./assets/cuddle.gif");
   elem.textContent = "Счастье";
   move(10, "green");
 
@@ -77,7 +77,7 @@ function petTheDog() {
 }
 play.addEventListener("click", playWithMe);
 function playWithMe() {
-  pic.setAttribute("src", "./images/play.gif");
+  pic.setAttribute("src", "./assets/play.gif");
   elem.textContent = "Счастье";
   move(10, "green");
 
@@ -85,7 +85,7 @@ function playWithMe() {
 }
 sleep.addEventListener("click", goToBed);
 function goToBed() {
-  pic.setAttribute("src", "./images/gotobed.gif");
+  pic.setAttribute("src", "./assets/gotobed.gif");
   elem.textContent = "Энергия";
   move(10, "green");
 
@@ -93,7 +93,7 @@ function goToBed() {
 }
 scold.addEventListener("click", scareMe);
 function scareMe() {
-  pic.setAttribute("src", "./images/scared.gif");
+  pic.setAttribute("src", "./assets/scared.gif");
   elem.textContent = "Счастье";
   move(10, "red");
 
@@ -105,18 +105,18 @@ function food() {
   burger.classList.remove("burgerTrue");
 }
 function feedMe() {
-  pic.setAttribute("src", "./images/happytosee.gif");
+  pic.setAttribute("src", "./assets/happytosee.gif");
   elem.textContent = "Сытость";
   move(10, "green");
   burger.classList.add("burgerTrue");
   setTimeout(food, 5000);
-  setTimeout(() => pic.setAttribute("src", "./images/kisses.gif"), 5000);
+  setTimeout(() => pic.setAttribute("src", "./assets/kisses.gif"), 5000);
   hunger.value += 50;
 }
 
 walk.addEventListener("click", goForWalk);
 function goForWalk() {
-  pic.setAttribute("src", "./images/shocked.gif");
+  pic.setAttribute("src", "./assets/shocked.gif");
   elem.textContent = "Туалет";
   move(10, "green");
 
@@ -126,5 +126,5 @@ function goForWalk() {
 clean.addEventListener("click", cleanPoops);
 function cleanPoops() {
   poop.style.display = "none";
-  pic.setAttribute("src", "./images/laughwithtears.gif");
+  pic.setAttribute("src", "./assets/laughwithtears.gif");
 }
