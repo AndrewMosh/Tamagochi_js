@@ -8,10 +8,10 @@
 
 ## Интерфейс приложения
 
-<img align="center"  src="https://github.com/AndrewMosh/Tamagochi-js-/blob/master/assets/1.png">
-<img align="center"  src="https://github.com/AndrewMosh/Tamagochi-js-/blob/master/assets/2.png">
-<img align="center"  src="https://github.com/AndrewMosh/Tamagochi-js-/blob/master/assets/3.png">
-<img align="center"  src="https://github.com/AndrewMosh/Tamagochi-js-/blob/master/assets/4.png">
+<img align="center"  src="https://github.com/AndrewMosh/Tamagochi-js-/blob/master/images/1.png">
+<img align="center"  src="https://github.com/AndrewMosh/Tamagochi-js-/blob/master/images/2.png">
+<img align="center"  src="https://github.com/AndrewMosh/Tamagochi-js-/blob/master/images/3.png">
+<img align="center"  src="https://github.com/AndrewMosh/Tamagochi-js-/blob/master/images/4.png">
 
 <br/>
 
