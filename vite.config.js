@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   base: "https://andrewmosh.github.io/Tamagochi_js/",
+
   build: {
     minify: "terser", // Минификация кода
     target: "es2015", // Транспиляция до ES2015
