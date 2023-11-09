@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./tamagotchi.png" type="image/x-icon" />
+    
+    <script
+      src="https://kit.fontawesome.com/02875aae10.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Тамагочи</title>
+    <link rel="stylesheet" href="https://andrewmosh.github.io/Tamagochi_js/assets/index-9f0976b4.css">
+  </head>
+  <body>
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+
+    <div class="menu">
+      <input type="checkbox" />
+      <label id="show-menu">
+        <div class="shiba">
+          <img
+            id="shiba"
+            src="https://andrewmosh.github.io/Tamagochi_js/assets/happy to see-9531708b.gif"
+            class="material-icons toggleBtn menuBtn"
+          />
+          <img class="burger" src="https://andrewmosh.github.io/Tamagochi_js/assets/burger-01f930dc.webp" alt="" />
+        </div>
+        <div id="eat" class="btn">
+          <i title="покорми меня" class="fa-solid fa-utensils fasize"></i>
+        </div>
+        <div id="petMe" class="btn">
+          <i title="погладь меня" class="fa-solid fa-heart fasize"></i>
+        </div>
+        <div id="play" class="btn">
+          <i title="поиграй со мной" class="fa-solid fa-football fasize"></i>
+        </div>
+        <div id="clean" class="btn">
+          <i title="убери мои какахи" class="fa-solid fa-broom fasize"></i>
+        </div>
+        <div id="walk" class="btn">
+          <i title="гулять" class="fa-solid fa-mountain-city fasize"></i>
+        </div>
+        <div id="scold" class="btn">
+          <i title="не ругай меня" class="fa-regular fa-face-angry fasize"></i>
+        </div>
+        <div id="sleep" class="btn">
+          <i title="время спать" class="fa-solid fa-moon fasize"></i>
+        </div>
+        <div id="about" class="btn">
+          <i title="обо мне" class="fa-solid fa-lightbulb fasize"></i>
+        </div>
+        <div class="eyes"></div>
+      </label>
+
+      <div class="bio">
+        <div class="progress">
+          <label>Энергия</label
+          ><progress id="energy" value="100" max="100"></progress>
+          <label>Счастье</label
+          ><progress id="happy" value="100" max="100"></progress>
+          <label>Сытость</label
+          ><progress id="hunger" value="100" max="100"></progress>
+          <label>Туалет</label
+          ><progress id="toilet" value="100" max="100"></progress>
+        </div>
+      </div>
+    </div>
+    <div class="poop"><img src="https://andrewmosh.github.io/Tamagochi_js/assets/shit-f7dfab2d.gif" alt="" /></div>
+    <script src="main.js"></script>
+  </body>
+</html>
