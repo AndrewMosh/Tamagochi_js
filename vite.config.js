@@ -9,6 +9,5 @@ export default defineConfig({
     outDir: "dist", // Папка для выходных файлов
     assetsInlineLimit: 4096, // Лимит для встраивания ресурсов в код (байты)
     sourcemap: false, // Генерация sourcemaps
-    chunkSizeWarningLimit: 2000, // Предупреждение при большом размере чанка
   },
 });

@@ -4,7 +4,7 @@ html {
 }
 body {
   overflow: hidden;
-  background-image: url("./assets/livinroom.jpg");
+  background-image: url("./images/livinroom.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -194,7 +194,7 @@ input {
 
 .beach {
   overflow: hidden;
-  background-image: url(./assets/forest.jpg);
+  background-image: url(./images/forest.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
