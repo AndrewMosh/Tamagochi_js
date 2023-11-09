@@ -1,3 +1,13 @@
+import cry from "./images/cry.gif";
+import pooped from "./images/pooped.gif";
+import cuddle from "./images/cuddle.gif";
+import playing from "./images/play.gif";
+import tobed from "./images/gotobed.gif";
+import scared from "./images/scared.gif";
+import happytosee from "./images/happytosee.gif";
+import kisses from "./images/kisses.gif";
+import shocked from "./images/shocked.gif";
+import laugh from "./images/laughwithtears.gif";
 const about = document.getElementById("about");
 const clean = document.getElementById("clean");
 const bio = document.querySelector(".bio");
@@ -16,6 +26,7 @@ const energy = document.getElementById("energy");
 const happy = document.getElementById("happy");
 const toilet = document.getElementById("toilet");
 const hunger = document.getElementById("hunger");
+
 function move(interval, color) {
   cont.style.display = "block";
   var i = 0;
@@ -54,12 +65,12 @@ function count() {
     hunger.value -= 2;
   }
   if (toilet.value == 0) {
-    pic.setAttribute("src", "./assets/pooped.gif");
+    pic.setAttribute("src", pooped);
     poop.style.display = "block";
     toilet.value = 100;
   }
   if (energy.value === 0 && happy.value === 0 && hunger.value === 0) {
-    pic.setAttribute("src", "./assets/cry.gif");
+    pic.setAttribute("src", cry);
   }
   countProgress++;
 }
@@ -69,7 +80,7 @@ function showBio() {
 }
 petMe.addEventListener("click", petTheDog);
 function petTheDog() {
-  pic.setAttribute("src", "./assets/cuddle.gif");
+  pic.setAttribute("src", cuddle);
   elem.textContent = "Счастье";
   move(10, "green");
 
@@ -77,7 +88,7 @@ function petTheDog() {
 }
 play.addEventListener("click", playWithMe);
 function playWithMe() {
-  pic.setAttribute("src", "./assets/play.gif");
+  pic.setAttribute("src", playing);
   elem.textContent = "Счастье";
   move(10, "green");
 
@@ -85,7 +96,7 @@ function playWithMe() {
 }
 sleep.addEventListener("click", goToBed);
 function goToBed() {
-  pic.setAttribute("src", "./assets/gotobed.gif");
+  pic.setAttribute("src", tobed);
   elem.textContent = "Энергия";
   move(10, "green");
 
@@ -93,7 +104,7 @@ function goToBed() {
 }
 scold.addEventListener("click", scareMe);
 function scareMe() {
-  pic.setAttribute("src", "./assets/scared.gif");
+  pic.setAttribute("src", scared);
   elem.textContent = "Счастье";
   move(10, "red");
 
@@ -105,18 +116,18 @@ function food() {
   burger.classList.remove("burgerTrue");
 }
 function feedMe() {
-  pic.setAttribute("src", "./assets/happytosee.gif");
+  pic.setAttribute("src", happytosee);
   elem.textContent = "Сытость";
   move(10, "green");
   burger.classList.add("burgerTrue");
   setTimeout(food, 5000);
-  setTimeout(() => pic.setAttribute("src", "./assets/kisses.gif"), 5000);
+  setTimeout(() => pic.setAttribute("src", kisses), 5000);
   hunger.value += 50;
 }
 
 walk.addEventListener("click", goForWalk);
 function goForWalk() {
-  pic.setAttribute("src", "./assets/shocked.gif");
+  pic.setAttribute("src", shocked);
   elem.textContent = "Туалет";
   move(10, "green");
 
@@ -126,5 +137,5 @@ function goForWalk() {
 clean.addEventListener("click", cleanPoops);
 function cleanPoops() {
   poop.style.display = "none";
-  pic.setAttribute("src", "./assets/laughwithtears.gif");
+  pic.setAttribute("src", laugh);
 }
